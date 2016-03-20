@@ -1,5 +1,5 @@
 var albumPicasso = {
-  name: 'The Colors',
+  title: 'The Colors',
   artist: 'Pablo Picasso', 
   label: 'Cubism',
   year: '1881', 
@@ -14,7 +14,7 @@ var albumPicasso = {
 };
 
 var albumMarconi = {
-  name: 'The Telephone',
+  title: 'The Telephone',
   artist: 'Guglielmo Marconi',
   label: 'EM',
   year: '1909',

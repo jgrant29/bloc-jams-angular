@@ -1,0 +1,14 @@
+Article has_many :topics
+
+Topics
+
+Coverage
+
+
+related_articles = []
+
+current_article.topics.each do |t|
+  related_articles << t.articles
+end
+
+related_articles.uniq
