@@ -2,11 +2,11 @@
   function SongPlayer() {
     var SongPlayer = {};
 
-    var currentSong = null;
     var currentBuzzObject = null;
+    SongPlayer.currentSong.play = null;
 
     SongPlayer.play = function(song) {
-      if (currentSong !== song) {
+      if (songplayer.play !== song) {
       setSong(song);
       currentBuzzObject.play();
       song.playing = true;
@@ -21,8 +21,8 @@
     var setSong = function(song) {
       if (currentBuzzObject) {
           currentBuzzObject.stop();
-          currentSong.playing = null;
-        } else if (currentSong === song) {
+          songplayer.play.playing = null;
+        } else if (songplayer.play === song) {
           if (currentBuzzObject.isPaused()) {
             currentBuzzObject.play();
           }
@@ -33,7 +33,7 @@
         preload: true
       });
 
-      currentSong = song;
+      songplayer.play = song;
     }
 
     var playSong = function(song) {
