@@ -36,6 +36,11 @@
       currentSong = song;
     }
 
+    var playSong = function(song) {
+      currentBuzzObject.play();
+      song.playing = true;
+    }
+
     return SongPlayer;
   }
 
