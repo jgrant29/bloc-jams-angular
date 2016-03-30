@@ -21,6 +21,7 @@
      * @type {Number}
      */
      SongPlayer.currentTime = null;
+   }
 
     SongPlayer.play = function(song) {
       song = song || SongPlayer.currentSong;
