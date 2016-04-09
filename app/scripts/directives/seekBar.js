@@ -66,15 +66,13 @@
             if (typeof scope.onChange === 'function') {
               scope.onChange({value: newValue});
             }
+          };
 
              $document.bind('mouseup.thumb', function() {
-               console.log(2)
                  $document.unbind('mousemove.thumb');
                  $document.unbind('mouseup.thumb');
              });
-          };
-             
-          
+
         }
     };
   }
